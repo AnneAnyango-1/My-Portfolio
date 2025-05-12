@@ -1,0 +1,101 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    width: 45%;
+    border-radius: 8px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Media Query for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; /* Stack the sections vertically */
+        padding: 10px;
+    }
+
+    section {
+        width: 100%; /* Each section takes full width */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack the navigation items vertically */
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+
+/* Media Query for Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    header {
+        text-align: center;
+    }
+
+    nav ul {
+        display: block;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 10px;
+        width: 100%; /* Full-width sections */
+    }
+}
